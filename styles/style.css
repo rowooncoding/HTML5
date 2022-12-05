@@ -37,8 +37,21 @@ body {
 /* ::before => first child */
 /* ::after => last child */
 
-.member li::before {
+/* .member li::before {
   content: ":";
+} */
+
+/* .member .first::before  {
+  content: "";
+} */
+
+/* .member li:first-child::before  {
+  content: "";
+} */
+
+.member li:nth-child(n + 2)::before {
+  content: ":";
+  background-color: skyblue;
 }
 
 /* 비주얼 */
