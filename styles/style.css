@@ -21,9 +21,24 @@ body {
 
 /* 헤더 */
 .header {
-  background-color: pink;
+  background-color: #fff;
   padding : 0 30px;
   height : 15vh;
+  border-radius: 0 0 15px 15px;
+}
+
+.member {
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+/* ::before => first child */
+/* ::after => last child */
+
+.member li::before {
+  content: ":";
 }
 
 /* 비주얼 */
