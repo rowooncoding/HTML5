@@ -144,7 +144,7 @@ body {
 }
 
 .menu-accessibility, .menu-qna, .menu-archive {
-  left: 0;
+  right: 0;
 }
 
 .is-active .sub-menu {
