@@ -3,7 +3,7 @@
 @import url(./reset.css);
 
 /* 숨김 컨텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   background-color: red;
   position: absolute;
   width: 1px;
@@ -241,17 +241,17 @@ body {
 .visual-text {
   font-family: Georgia, "Times New Roman", Times, serif;
   animation: moveEffect 3000ms ease-in-out forwards;
-  display: inline-block;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 
 /* 메인 */
 .main {
-  background-color: lightgreen;
-  height : 50vh;
   display : flow-root;
-  padding: 0 15px;
+  background-color: #fff;
+  min-height : 450px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -260,7 +260,6 @@ body {
 }
 
 .group1 {
-  background-color: violet ;
   width :250px;
 }
 
@@ -272,6 +271,98 @@ body {
 .group3 {
   background-color: gold ;
   width : 190px;
+}
+
+/* 로그인  */
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: orange radial-gradient(circle at right top, orange, orangered); 
+  padding: 10px;
+  background-color: coral;
+  border-radius: 5px;
+}
+
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+
+.user-email, .user-pw {
+  margin-bottom: 5px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 53px;
+  background-color: orangered;
+  color: #fff;
+  border: 0;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+
+.sign a::before {
+  content: '\e803';
+  font-family: 'fontello';
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 8px;
+  color: orangered;
 }
 
 /* 슬로건 */
