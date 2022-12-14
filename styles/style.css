@@ -70,7 +70,7 @@ body {
   /* position: relative;
   right: -10px; */
   /* trasform으로 10px 만큼 이동 */
-  transform: translateX(10px;);
+  transform: translateX(10px);
 }
 
 .member li {
